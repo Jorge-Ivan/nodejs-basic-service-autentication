@@ -1,0 +1,31 @@
+# Dependencias
+node_modules/
+
+# Archivos de configuración local
+.env
+
+# Archivos generados por el compilador o empaquetador
+dist/
+build/
+*.bundle.js
+*.bundle.js.map
+
+# Logs y archivos de registro
+logs/
+*.log
+
+# Archivos de respaldo
+*.bak
+*.swp
+
+# Entorno de desarrollo específico de IDE y editores de texto
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Caché y archivos temporales
+.cache/
+.tmp/
+temp/
+*.tmp
