@@ -12,12 +12,12 @@ Este proyecto es un servicio de autenticación básica en Node.js que permite el
 1. Crea un archivo `.env` en la raíz del proyecto.
 2. Agrega las siguientes variables de entorno en el archivo `.env`:
 
-DB_HOST=host_de_tu_base_de_datos
-DB_PORT=puerto_de_tu_base_de_datos
-DB_NAME=nombre_de_tu_base_de_datos
-DB_USER=usuario_de_tu_base_de_datos
-DB_PASSWORD=contraseña_de_tu_base_de_datos
-JWT_SECRET=secreto_para_generar_el_token_JWT
+        DB_HOST=host_de_tu_base_de_datos
+        DB_PORT=puerto_de_tu_base_de_datos
+        DB_NAME=nombre_de_tu_base_de_datos
+        DB_USER=usuario_de_tu_base_de_datos
+        DB_PASSWORD=contraseña_de_tu_base_de_datos
+        JWT_SECRET=secreto_para_generar_el_token_JWT
 
 
 3. Asegúrate de tener PostgreSQL instalado y configurado en tu máquina local. Crea una base de datos con el nombre especificado en `DB_NAME` en el archivo `.env`.
@@ -35,7 +35,7 @@ JWT_SECRET=secreto_para_generar_el_token_JWT
 
 - `POST /register`: Permite registrar un nuevo usuario. Debes enviar los datos del usuario en el cuerpo de la solicitud (nombre de usuario, correo electrónico y contraseña).
 
-- `POST /login`: Permite autenticar a un usuario. Debes enviar las credenciales del usuario (nombre de usuario y contraseña) en el cuerpo de la solicitud. Si las credenciales son válidas, recibirás un token JWT que deberás incluir en las solicitudes posteriores como encabezado `Authorization`.
+- `POST /login`: Permite autenticar a un usuario. Debes enviar las credenciales del usuario (nombre de usuario y contraseña) en el cuerpo de la solicitud. Si las credenciales son válidas, recibirás un token JWT que deberás incluir en las solicitudes posteriores como encabezado `Authorization Bearer`.
 
 - `GET /welcome`: Ruta protegida que requiere un token JWT válido. Devuelve un mensaje de bienvenida al usuario autenticado.
 
